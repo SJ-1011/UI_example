@@ -24,8 +24,12 @@ body {
     margin-left: 0;
   }
 
-  a::before {
+  li::before {
     content: '/ ';
+  }
+
+  li:first-child::before {
+    content: '';
   }
 
   .recommand_subscription::before {
