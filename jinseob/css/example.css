@@ -1,9 +1,14 @@
-.example a.item::after {
-  content: ' / ';
+li {
+  display: inline-block;
+}
 
-  font-size: 12px;
-  font-family: 'suit', sans-serif;
+.item::after {
+  content: ' / ';
 }
 a {
   text-decoration: none;
+}
+
+.hide {
+  color: rgba(0, 0, 0, 0.5);
 }
