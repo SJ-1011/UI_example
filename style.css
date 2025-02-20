@@ -1,0 +1,34 @@
+body {
+  font-family: 'SUIT', 'serif';
+}
+.first_ul {
+  display: flex;
+  list-style: none;
+  color: lightgray;
+
+  a {
+    text-decoration: none;
+    color: lightgray;
+  }
+
+  .recommand_subscription {
+    color: black;
+    font-weight: bold;
+  }
+
+  li {
+    margin-left: 0.5rem;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+  a::before {
+    content: '/ ';
+  }
+
+  .recommand_subscription::before {
+    content: '';
+  }
+}
