@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+a {
+  text-decoration: none;
+}
+.UI {
+  opacity: 0.3;
+}
+.UI::after {
+  content: ' /';
+}
+
+.UI {
+  color: black;
+}
+
+h1::before {
+  content: '가짜 ';
+}
+
+h1::after {
+  content: ' 만들어보기';
+}
