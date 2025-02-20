@@ -1,0 +1,9 @@
+.example a.item::after {
+  content: ' / ';
+
+  font-size: 12px;
+  font-family: 'suit', sans-serif;
+}
+a {
+  text-decoration: none;
+}
