@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+:root{
+	--neutral-color: #4D4D4D;
+}
+body{
+	font-family: 'Pretendard-Regular', sans-serif;
+}
+
+.cart_wrap{
+	--font-color: var(--neutral-color);
+	--line-color: var(--neutral-color);
+
+	margin-bottom: 5px;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 4px solid var(--line-color);
+	border-radius: 8px;
+
+	.cart_header{
+		padding-bottom: 5px;
+		border-bottom: 1px solid var(--line-color);
+		font-size: 0;
+
+		img{
+			vertical-align: middle;
+		}
+		span{
+			vertical-align: middle;
+			color: var(--font-color);
+			font-size: 24px;
+		}
+	}
+
+	ul.cart_list{
+		margin: 0;
+		padding: 20px 0;
+
+		>li{
+			position: relative;
+			list-style: none;
+			padding: 10px 0;
+			font-size: 0;
+		}
+
+		.item_image{
+			width: 64px;
+			height: 64px;
+			object-fit: cover;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+
+		.item_info{
+			display: inline-block;
+			width: calc(100% - 64px);
+			vertical-align: middle;
+			padding-left: 15px;
+			padding-right: 65px;
+			box-sizing: border-box;
+
+			.item_name{
+				color: var(--font-color);
+				font-size: 20px;
+			}
+			.item_price{
+				margin-top: 5px;
+				color: var(--font-color);
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+
+		.item_count_chk{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 4px;
+			border: 1px solid #B3B3B3;
+			border-radius: 40px;
+			background-color: #eee;
+			font-size: 0;
+
+			button{
+				border: 0;
+				background-color: transparent;
+				color: var(--font-color);
+				font-size: 14px;
+			}
+			.count{
+				color: var(--font-color);
+				font-size: 14px;
+			}
+		}
+	}
+
+	.cart_total_price{
+		padding-top: 20px;
+		border-top: 1px solid var(--line-color);
+		color: var(--font-color);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: right;
+	}
+}
